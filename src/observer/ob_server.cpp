@@ -2397,6 +2397,7 @@ int ObServer::init_global_context()
   gctx_.ssl_key_expired_time_ = 0;
   gctx_.diag_ = &diag_;
   gctx_.scramble_rand_ = &scramble_rand_;
+  gctx_.session_mgr_ = &session_mgr_;
   gctx_.init();
   gctx_.schema_status_proxy_ = &schema_status_proxy_;
   gctx_.in_bootstrap_ = false;
